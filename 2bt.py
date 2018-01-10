@@ -651,7 +651,7 @@ def bot(op):
         if op.type == 13:
             if wait["auto"] == True:
                 cl.acceptGroupInvitation(op.param1)
-                cl.sendText(op.param1, "Terima Kasih Telah Invite 👉😊☆º°˚˚☆✰ tɛǟʍ ċʏɮɛʀ-ǟʀʍʏ ɮօt ✰☆º°˚˚☆（＾ω＾）\n\nby Kris ⭐👈 »»» http://line.me/ti/p/GkwfNjoPDH «««\n\nSilahkan ketik [Help],dan gunakan dgn bijak")
+                cl.sendText(op.param1, "Terima Kasih Telah Di Invite Kak 👉😊")
         if op.type == 5:
             if wait["autoAdd"] == True:
                 cl.findAndAddContactsByMid(op.param1)
@@ -686,7 +686,7 @@ def bot(op):
             if "@"+cl.getProfile().displayName in msg.text:
                 if wait["tag"] == True:
                     tanya = msg.text.replace("@"+cl.getProfile().displayName,"")
-                    jawab = ("Kenapa Tag Si "+cl.getProfile().displayName+"Kangen yah..!!!\nPC aja langsung biar anu hihi..!!\n[autoRespon]by=>SelfBot~Kris\n👉Cyber Army Bot👈","Nah ngetag lagi si "+cl.getProfile().displayName+" mending ajak mojok aja dari pada ngetag mulu.. wkwk...!!!\n[autoRespon]by=>SelfBot~Kris\n👉Cyber Army Bot👈")
+                    jawab = ("Kenapa Tag Si "+cl.getProfile().displayName+"Kangen yah..!!!\nPC aja langsung biar anu hihi..!!\n[autoRespon]by=>Self👉ADHI👈","Nah ngetag lagi si "+cl.getProfile().displayName+" mending ajak mojok aja dari pada ngetag mulu.. wkwk...!!!\n[autoRespon]by=>SelfBot~ADHI\n👉TEAMBOTADHI👈")
                     jawaban = random.choice(jawab)
                     cl.sendText(msg.to,jawaban)
 
@@ -699,7 +699,7 @@ def bot(op):
             if "@"+cl.getProfile().displayName in msg.text:
                 if wait["tag2"] == True:
                     tanya = msg.text.replace("@"+cl.getProfile().displayName,"")
-                    jawab = "Kenapa Tag Si "+cl.getProfile().displayName+"Kangen yah..!!!\nPC aja langsung biar anu hihi..!!\n[autoRespon]by=>SelfBot~Kris\n👉Cyber Army Bot👈","Nah ngetag lagi si "+cl.getProfile().displayName+" mending ajak mojok aja dari pada ngetag mulu.. wkwk...!!!\n[autoRespon]by=>SelfBot~Kris\n👉Cyber Army Bot👈"
+                    jawab = "Kenapa Tag Si "+cl.getProfile().displayName+"Kangen yah..!!!\nPC aja langsung biar anu hihi..!!\n[autoRespon]by=>SelfBot~ADHI\n👉TEAMBOTADHI👈","Nah ngetag lagi si "+cl.getProfile().displayName+" mending ajak mojok aja dari pada ngetag mulu.. wkwk...!!!\n[autoRespon]by=>SelfBot~ADHI\n👉TeamAdhiBot👈"
                     jawaban = random.choice(jawab)
                     cl.sendText(msg.to,jawaban)
                     cl.kickoutFromGroup(msg.to,[msg.from_])
